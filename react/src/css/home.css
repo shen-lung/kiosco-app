@@ -1,3 +1,97 @@
-h1 {
-    color: brown;
+.ant-carousel .slick-slide {
+    height: 100%;
+    line-height: 100%;
+}
+.header {
+    background: none;
+    height: 100%;
+    line-height: 100%;
+    padding: 0;
+}
+.menu {
+    height: 100px;
+    margin-top: 10px;
+    width: 100%;
+}
+.menu-section {
+    position: relative;
+}
+.menu-section__content {
+    margin-top: 10px;
+}
+.icon-color {
+    color: #3f3f3f;
+}
+.icon-color:visited {
+    color: #3f3f3f;
+}
+.icon-color:hover {
+    color: #3f3f3f;
+}
+.icon-color:active {
+    color: #3f3f3f;
+}
+.carousel {
+    border: rgb(230, 228, 228) 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgb(224, 224, 224);
+    margin: 16px auto;
+    position: relative;
+    width: 1024px;
+}
+.menu_imagen {
+    font-size: 22px;
+}
+.menu-section__right {
+    margin-top: 30px;
+    text-align: end;
+    padding-right: 192px;
+}
+.menu-section__left {
+    margin-top: 30px;
+    margin-left: 180px;
+    position: relative;
+    width: 256px;
+    z-index: 1000;
+}
+.user-section__logo {
+    height: 50px;
+    padding: 0 12px;
+}
+.image-logo {
+    position: relative;
+    top: -14%;
+    width: 160px;
+}
+.image-logo__align {
+    text-align: center;
+}
+.find-sesction {
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(224, 224, 224);
+    width: 300px;
+}
+.user-section {
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 150px;
+    height: 220px;
+    background-color: #ffffff;
+}
+.user-section__hello-text {
+    margin-bottom: 0;
+}
+.user-section__regards {
+    margin-bottom: 14px;
+    margin-top: 14px;
+    text-align: center;
+}
+.user-section__fields {
+    margin: 0 !important;
+}
+.user-section__menu .ant-menu-vertical{
+    border-right: none;
+}
+.user-section__menu_imagen {
+    font-size: 16px !important;
 }

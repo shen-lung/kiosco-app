@@ -1,15 +1,11 @@
 import React, { PureComponent} from 'react';
 
-import '../css/home.css';
+import HeaderPage from './Header';
 
 class Home extends PureComponent {
-
     render() {
-
         return (
-            <div className="">
-               <h1>KIOSCO VIRTUAL</h1>
-            </div>
+            <HeaderPage />
         );
     }
 }
