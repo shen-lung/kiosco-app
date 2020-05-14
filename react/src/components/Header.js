@@ -1,6 +1,4 @@
-import React, {PureComponent} from 'react';
-
-// import Carousel from 'react-bootstrap/Carousel'
+import React, { PureComponent } from 'react';
 
 import {
     Row,
@@ -8,11 +6,11 @@ import {
     Layout,
     Carousel,
     Menu,
-    Button,
     Input,
     Badge,
     Space,
     Dropdown,
+    Tooltip,
 } from 'antd';
 import {
     SmileOutlined,
@@ -24,13 +22,11 @@ import {
     LogoutOutlined,
 } from '@ant-design/icons';
 
-const {Header} = Layout;
-const {SubMenu} = Menu;
-const {Search} = Input;
+const { Header } = Layout;
+const { SubMenu } = Menu;
+const { Search } = Input;
 
-import '../css/home.css';
-
-class HeaderPage extends PureComponent {
+class HeaderSection extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -87,8 +83,14 @@ class HeaderPage extends PureComponent {
                             <Row>
                                 <Col span={9}>
                                     <div className="menu-section__left">
-                                        <a className="icon-color menu_imagen" href="#" onClick={this.toggleCollapsed}>
-                                            {!this.state.collapsed ? <MenuOutlined /> : <CloseOutlined />}
+                                        <a className="icon-color menu_imagen" onClick={this.toggleCollapsed}>
+                                            {
+                                                !this.state.collapsed ?
+                                                <Tooltip placement="bottom" title={'Menú'}>
+                                                    <MenuOutlined />
+                                                </Tooltip> : 
+                                                <CloseOutlined />
+                                            }
                                         </a>
                                            
                                         {this.state.collapsed && <div className="menu-section__content"><Menu
@@ -129,36 +131,44 @@ class HeaderPage extends PureComponent {
                                             onSearch={value => console.log(value)}
                                         />
                                         <Dropdown overlay={menu} placement="bottomCenter" trigger={['click']}>
-                                            <a className="icon-color" href="#">
-                                                <UserOutlined className="menu_imagen icon-color" />
+                                            <a className="icon-color">
+                                                <Tooltip placement="bottom" title={'Mis datos'}>
+                                                    <UserOutlined className="menu_imagen icon-color" />
+                                                </Tooltip>
                                             </a>
                                         </Dropdown>
-                                        <a className="icon-color" href="#">
-                                            <Badge count={0} showZero>
-                                                <ShoppingCartOutlined className="menu_imagen icon-color" />
-                                            </Badge>
+                                        <a className="icon-color">
+                                            <Tooltip placement="bottom" title={'Carrito de compras'}>
+                                                <Badge count={0} showZero>
+                                                    <ShoppingCartOutlined className="menu_imagen icon-color" />
+                                                </Badge>
+                                            </Tooltip>
                                         </a>
                                     </Space>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <div className="">
-                                        <div></div>
-                                        <div></div>
-                                    </div>
                                 </Col>
                             </Row>
                         </div>
                     </div>
                     <div className="carousel">
                         <Carousel autoplay effect="fade">
-                            <img src="./src/image/collection_1.png" height="500" width="1024"/>
-                            <img src="./src/image/collection_2.png" height="500" width="1024"/>
-                            <img src="./src/image/collection_3.png" height="500" width="1024"/>
-                            <img src="./src/image/collection_4.png" height="500" width="1024"/>
-                            <img src="./src/image/collection_5.png" height="500" width="1024"/>
-                            <img src="./src/image/collection_6.png" height="500" width="1024"/>
+                            <a href="#">
+                                <img src="./src/image/carousel/collection_1.png" height="500" width="1024"/>
+                            </a>
+                            <a href="#">
+                                <img src="./src/image/carousel/collection_2.png" height="500" width="1024"/>
+                            </a>
+                            <a href="#">
+                                <img src="./src/image/carousel/collection_3.png" height="500" width="1024"/>
+                            </a>
+                            <a href="#">
+                                <img src="./src/image/carousel/collection_4.png" height="500" width="1024"/>
+                            </a>
+                            <a href="#">
+                                <img src="./src/image/carousel/collection_5.png" height="500" width="1024"/>
+                            </a>
+                            <a href="#">
+                                <img src="./src/image/carousel/collection_6.png" height="500" width="1024"/>
+                            </a>
                         </Carousel>
                     </div>
                 </Header>
@@ -167,4 +177,4 @@ class HeaderPage extends PureComponent {
     }
 }
 
-export default HeaderPage;
+export default HeaderSection;

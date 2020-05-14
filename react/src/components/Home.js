@@ -1,11 +1,19 @@
 import React, { PureComponent} from 'react';
 
-import HeaderPage from './Header';
+import HeaderSection from './Header';
+import ContentSection from './Content';
+import FooterSection from './Footer';
+
+import '../css/home.css';
 
 class Home extends PureComponent {
     render() {
         return (
-            <HeaderPage />
+            <div>
+                <HeaderSection />
+                <ContentSection />
+                <FooterSection />
+            </div>
         );
     }
 }

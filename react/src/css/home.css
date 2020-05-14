@@ -95,3 +95,101 @@
 .user-section__menu_imagen {
     font-size: 16px !important;
 }
+.image-over {
+    margin-top: -85px;
+   justify-content: center; 
+}
+.image-over-carousel__first{
+    background-color: rgb(241, 241, 241);;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(224, 224, 224);
+    border: rgb(230, 228, 228) 1px solid;
+    height: 180px;
+    width: 360px;
+}
+.image-over-carousel__second{
+    background-color: rgb(241, 241, 241);;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(224, 224, 224);
+    border: rgb(230, 228, 228) 1px solid;
+    height: 180px;
+    margin-left: 144px;
+    width: 360px;
+}
+.horizontal-carousel {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+    width: 1024px;
+}
+.horizontal-carousel__title {
+    font-size: 34px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.horizontal-carousel__button{
+    display: block;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgb(224, 224, 224);
+    height: 36px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    top: 36%;
+    width: 40px;
+}
+.horizontal-carousel__button-icon {
+    margin: 0;
+    position: absolute;
+    top: 18%;
+    left: 7px;
+}
+.footer {
+    background-color: #f8f8f8;
+    border-top: rgb(230, 228, 228) 1px solid;
+    box-shadow: 1px 1px 15px rgb(224, 224, 224);
+}
+.footer-section {
+    height: 33px;
+    margin-bottom: 42px;
+}
+.footer-section__center {
+    text-align: center;
+}
+.footer-section__center-direccion {
+    margin-bottom: 0;
+}
+.footer-section__center-tel {
+    margin-top: 8px;
+}
+.footer-section__right {
+    text-align: end;
+}
+.footer-section__content-position-left {
+    color: rgba(0, 0, 0, .85);
+    padding-left: 129px;
+    position: relative;
+    top: 26%;
+}
+.footer-section__content-position-center {
+    color: rgba(0, 0, 0, .85);
+    position: relative;
+    top: 18%;
+}
+.facebook-icon {
+    margin-left: 20px;
+}
+.image-logo__footer {
+    width: 66px;
+    margin-right: 3px;
+}
+.icon {
+    margin-right: 4px;
+    width: 20px;
+}
+.facebook-page-text {
+    font-size: 14px;
+}
