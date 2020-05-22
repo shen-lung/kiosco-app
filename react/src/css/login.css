@@ -1,0 +1,34 @@
+.login-modal {
+    top: 25% !important;
+}
+.login-modal__content {
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: 408px;
+    padding-top: 18px;
+    width: 416px;
+}
+.login-section__content {
+    margin-top: 48px;
+}
+.registration-section__content {
+    margin-top: 24px;
+}
+.login-section__button-login{
+    margin-top: 84px !important;
+}
+.login-section__button-regis{
+    margin-bottom: 31px !important;
+    margin-top: 34px !important;
+}
+.login-section__link{
+    margin-bottom: 24px !important;
+    margin-top: 18px !important;
+}
+.login-modal__close-button {
+    margin-top: -58px !important;
+    margin-right: -38px !important;
+}
+.login-modal__close-button-icon {
+    color: #f1f1f1;
+}

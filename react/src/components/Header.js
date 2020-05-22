@@ -127,7 +127,7 @@ class HeaderSection extends PureComponent {
                                     <Space align="center" size="middle">
                                         <Search
                                             className="find-sesction"
-                                            placeholder="Colecciones, revistas ..."
+                                            placeholder="Buscar colecciones, revistas ..."
                                             onSearch={value => console.log(value)}
                                         />
                                         <Dropdown overlay={menu} placement="bottomCenter" trigger={['click']}>
