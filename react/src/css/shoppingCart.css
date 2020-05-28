@@ -1,0 +1,52 @@
+.shopping-cart-modal {
+    top: 16% !important;
+}
+.shopping-cart-modal__table {
+    box-shadow: none !important;
+}
+.shopping-cart-modal__table-footer {
+    width: 100%;
+}
+.shopping-cart-modal__close-button {
+    margin-top: -48px !important;
+    margin-right: -42px !important;
+}
+.shopping-cart-modal__close-button-icon {
+    color: #f1f1f1;
+}
+.shopping-cart-modal__product-icon {
+    height: 60px !important;
+    width: 60px !important;
+}
+.shopping-cart-modal__change-count-button {
+    padding: 0px !important;
+}
+.shopping-cart-modal__text {
+    font-size: 16px;
+}
+.shopping-cart-modal__text-total {
+    font-size: 20px;
+}
+.shopping-cart-modal__change-count-section {
+    margin-left: 10px !important;
+}
+.shopping-cart-modal__change-count-icon {
+    background-color: #eaeaea !important;
+    border: 1px solid #c7c7c7 !important;
+    color: #424242 !important;
+    height: 26px !important;
+    width: 26px !important;
+}
+.shopping-cart-modal__product-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.shopping-cart-modal__product-code {
+    font-size: 12px;
+}
+.shopping-cart-modal__pagination .MuiToolbar-gutters {
+    padding-left: 6px !important;
+}
+.buy-button {
+    padding-right: 16px;
+}

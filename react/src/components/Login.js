@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
-import Grow from '@material-ui/core/Grow';
 import Fade from '@material-ui/core/Fade';
 import Grid from '@material-ui/core/Grid';
 import Tabs from '@material-ui/core/Tabs';
@@ -88,15 +87,11 @@ function RegistrationTab(checked=false) {
 }
 
 export default function LoginComponent(props) {
-    const [openModal, setOpenModal] = React.useState(true);
-    const [tabValue, setTabValue] = React.useState('one');
+    const [openModal, setOpenModal] = useState(true);
+    const [tabValue, setTabValue] = useState('one');
 
     const handleTabChange = (event, newValue) => {
         setTabValue(newValue);
-    };
-
-    const handleOpenModal = () => {
-        setOpenModal(true);
     };
 
     const handleCloseModal = () => {

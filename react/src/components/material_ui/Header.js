@@ -30,6 +30,7 @@ import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
 
 import LoginComponent from '../Login';
+import ShoppingCartComponent from './ShoppingCart';
 import '../../css/header.css';
 
 function userMenuSection(userMenuAnchor, handleUserMenuClose) {
@@ -89,8 +90,17 @@ export default function HeaderSection() {
     const isLoginIn = false;
     const [open, setOpen] = useState(false);
     const [openMenuSection, setOpenMenuSection] = useState(false);
+    const [openShoppingModal, setShoppingModal] = useState(false);
     const [userMenuAnchor, setUserMenu] = useState(null);
     const [clickUser, setUserSection] = useState(false);
+
+    const handlShoppingModal = () => {
+        setShoppingModal(!openShoppingModal);
+    };
+
+    const handleCloseShoppingModal = () => {
+        setShoppingModal(!openShoppingModal);
+    };
     const handleUserMenuClose = () => {
         setUserMenu(null);
         setUserSection(false);
@@ -195,11 +205,12 @@ export default function HeaderSection() {
                     <IconButton>
                         <SearchRoundedIcon />
                     </IconButton>
-                    <IconButton>
+                    <IconButton onClick={handlShoppingModal}>
                         <Badge badgeContent={4} color="error">
                             <ShoppingCartRoundedIcon />
                         </Badge>
                     </IconButton>
+                    {openShoppingModal && <ShoppingCartComponent setShoppingModal={setShoppingModal} />}
                     <IconButton onClick={handleUserSection}>
                         <PersonRoundedIcon />
                     </IconButton>
