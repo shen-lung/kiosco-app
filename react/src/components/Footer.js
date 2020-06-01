@@ -1,43 +1,33 @@
 import React, {PureComponent} from 'react';
 
-import {
-    Row,
-    Col,
-    Layout,
-} from 'antd';
-
-const { Footer } = Layout;
+import { Grid } from '@material-ui/core';
 
 class FooterSection extends PureComponent {
     render() {
         return (
-            <Layout>
-                <Footer className="footer">
-                    <Row className="footer-section">
-                        <Col span={8}>
-                            <div className="footer-section__content-position-left">
-                                <img className="image-logo__footer" src="./src/image/logo.png" />
-                                © 2020
-                            </div>
-                        </Col>
-                        <Col span={8} className="footer-section__center">
-                            <div className="footer-section__content-position-center">
-                                <p className="footer-section__center-direccion">Lunes a Sábado 8 a 20 hs, Av. San Martín, Mendoza, Argentina</p>
-                                <p className="footer-section__center-tel">
-                                    <img className="icon" src="./src/image/telephone-icon.svg" />
-                                    <img className="icon" src="./src/image/whatsapp-icon.svg" />
-                                    261-1698-567
-                                    <img className="facebook-icon icon" src="./src/image/facebook-icon.svg" />
-                                    <a className="facebook-page-text">
-                                        Virtual Magazine
-                                    </a>
-                                </p>
-                            </div>
-                        </Col>
-                        <Col span={8}></Col>
-                    </Row>
-                </Footer>
-            </Layout>
+            <Grid container className="footer">
+                <Grid container item xs={3} justify="center" alignItems="center">
+                    <div className="footer-section__content-position-left">
+                        <Grid container justify="center" alignItems="center">
+                            <img className="image-logo__footer" src="./src/image/logo.png" />
+                            <span>© 2020</span>
+                        </Grid>
+                    </div>
+                </Grid>
+                <Grid item xs={6} className="footer-section__center">
+                    <p>Lunes a Sábado 8 a 20 hs, Av. San Martín, Mendoza, Argentina</p>
+                    <Grid container justify="center" alignItems="center">
+                        <img className="icon" src="./src/image/telephone-icon.svg" />
+                        <img className="icon" src="./src/image/whatsapp-icon.svg" />
+                        261-1698-567
+                        <img className="facebook-icon icon" src="./src/image/facebook-icon.svg" />
+                        <a className="facebook-page-text" href="#">
+                            Virtual Magazine
+                        </a>
+                    </Grid>
+                </Grid>
+                <Grid item xs={3}></Grid>
+            </Grid>
         );
     }
 }

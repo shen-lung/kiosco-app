@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
-import Grid from '@material-ui/core/Grid';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-import Avatar from '@material-ui/core/Avatar';
-import TablePagination from '@material-ui/core/TablePagination';
+import {
+    Modal,
+    Backdrop,
+    Fade,
+    Grid,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Paper,
+    IconButton,
+    Button,
+    Avatar,
+    TablePagination,
+} from '@material-ui/core';
 
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import DeleteForeverRoundedIcon from '@material-ui/icons/DeleteForeverRounded';
 
-import '../../css/shoppingCart.css';
+import '../css/shoppingCart.css';
 
 function createData(producto, precio, cantidad, totalParcial, action) {
     return { producto, precio, cantidad, totalParcial, action };
@@ -79,7 +81,7 @@ const rows = [
     createData(productContent, price, productCountAction, parcialTotal, deleteButton),
 ];
 
-export default function LoginComponent(props) {
+export default function ShoppingCartComponent(props) {
     const [openModal, setOpenModal] = useState(true);
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(4);

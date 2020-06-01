@@ -1,0 +1,13 @@
+.horizontal-carousel {
+    width: 1024px;
+}
+.horizontal-carousel__slide {
+    background-color: #e2e2e2;
+}
+.horizontal-carousel__section {
+    box-shadow: none !important;
+}
+.horizontal-carousel__title {
+    margin-top: 60px;
+    text-align: center;
+}
