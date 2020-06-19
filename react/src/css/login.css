@@ -1,6 +1,9 @@
 .login-modal {
     top: 25% !important;
 }
+.login-modal__section {
+    outline: 0 !important;
+}
 .login-modal__content {
     border-radius: 5px;
     background-color: #ffffff;

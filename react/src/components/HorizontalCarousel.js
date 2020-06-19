@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import Carousel from 'react-material-ui-carousel';
+import Carousel from 'react-elastic-carousel';
 import {
     Paper,
     Grid,
@@ -9,39 +9,30 @@ import {
 class HorizontalCarousel extends PureComponent {
     
     render () {
-        const items = [
+        const carouselItems = [
             {
-                image: (
-                    <div className="horizontal-carousel__slide">
-                        <Grid container justify="space-between">
-                            <a href="#"><img src="./src/image/over_carousel/collection_1.png" height="160" width="280" /></a>
-                            <a href="#"><img src="./src/image/over_carousel/collection_2.png" height="160" width="280" /></a>
-                            <a href="#"><img src="./src/image/over_carousel/collection_1.png" height="160" width="280" /></a>
-                        </Grid>
-                    </div>
-                )
+                id: 1,
+                image: (<img className="carousel__image" src="./src/image/carousel/1.jpg" height="248" width="600"/>)
             },
             {
-                image: (
-                    <div className="horizontal-carousel__slide">
-                        <Grid container justify="space-between">
-                            <a href="#"><img src="./src/image/over_carousel/collection_2.png" height="160" width="280" /></a>
-                            <a href="#"><img src="./src/image/over_carousel/collection_1.png" height="160" width="280" /></a>
-                            <a href="#"><img src="./src/image/over_carousel/collection_2.png" height="160" width="280" /></a>
-                        </Grid>
-                    </div>
-                )
+                id: 2,
+                image: (<img className="carousel__image" src="./src/image/carousel/2.jpg" height="248" width="600"/>)
             },
             {
-                image: (
-                    <div className="horizontal-carousel__slide">
-                        <Grid container justify="space-between">
-                            <a href="#"><img src="./src/image/over_carousel/collection_1.png" height="160" width="280" /></a>
-                            <a href="#"><img src="./src/image/over_carousel/collection_2.png" height="160" width="280" /></a>
-                            <a href="#"><img src="./src/image/over_carousel/collection_1.png" height="160" width="280" /></a>
-                        </Grid>
-                    </div>
-                )
+                id: 3,
+                image: (<img className="carousel__image" src="./src/image/carousel/3.jpg" height="248" width="600"/>)
+            },
+            {
+                id: 4,
+                image: (<img className="carousel__image" src="./src/image/carousel/3.jpg" height="248" width="600"/>)
+            },
+            {
+                id: 5,
+                image: (<img className="carousel__image" src="./src/image/carousel/2.jpg" height="248" width="600"/>)
+            },
+            {
+                id: 6,
+                image: (<img className="carousel__image" src="./src/image/carousel/1.jpg" height="248" width="600"/>)
             },
         ];
     
@@ -54,9 +45,17 @@ class HorizontalCarousel extends PureComponent {
         };
 
         return (
-            <Carousel className="carousel" interval={6000} timeout={500} indicators={false} animation="fade">
+            <Carousel
+                enableAutoPlay
+                transitionMs={1000}
+                autoPlaySpeed={8000}
+                showArrows={true}
+                enableMouseSwipe={true}
+                itemsToShow={3}
+                itemPadding={[10, 5]}
+            >
                 {
-                    items.map((item, index) => <Items key={index} item={item} />)
+                    carouselItems.map((item, index) => <Items key={index} item={item} />)
                 }
             </Carousel>
         )

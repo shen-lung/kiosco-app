@@ -112,7 +112,7 @@ export default function LoginComponent(props) {
                   timeout: 500,
                 }}
             >
-                <Grid container justify="center" alignItems="center">
+                <Grid className="login-modal__section" container justify="center" alignItems="center">
                     <Fade in={openModal}>
                         <div className="login-modal__content">
                             <Grid container justify="flex-end" alignItems="flex-start">

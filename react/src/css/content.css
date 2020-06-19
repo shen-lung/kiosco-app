@@ -1,13 +1,21 @@
-.horizontal-carousel {
-    width: 1024px;
+/* .horizontal-carousel {
+    width: 1210px;
+}
+.horizontal-carousel .rec-carousel-wrapper {
+    width: 1126px !important;
+} */
+.horizontal-carousel .rec-carousel-wrapper .rec-carousel {
+    margin-left: -10px;
+    width: 1330px !important;
 }
 .horizontal-carousel__slide {
     background-color: #e2e2e2;
 }
 .horizontal-carousel__section {
+    background-color: #e2e2e2 !important;
     box-shadow: none !important;
 }
 .horizontal-carousel__title {
-    margin-top: 60px;
+    margin-top: 122px;
     text-align: center;
 }

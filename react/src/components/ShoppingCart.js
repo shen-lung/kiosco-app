@@ -111,7 +111,7 @@ export default function ShoppingCartComponent(props) {
                   timeout: 500,
                 }}
             >
-                <Grid container justify="center" alignItems="center">
+                <Grid className="shopping-cart-modal__section" container justify="center" alignItems="center">
                     <Fade in={openModal}>
                         <div>
                             <Grid container justify="flex-end" alignItems="flex-start">

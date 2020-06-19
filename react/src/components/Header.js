@@ -30,7 +30,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
 
-import Carousel from 'react-material-ui-carousel';
+import Carousel from 'react-elastic-carousel';
 import ContentSection from './Content';
 import FooterSection from './Footer';
 
@@ -144,24 +144,21 @@ export default function HeaderSection() {
 
     const carouselItems = [
         {
+            id: 1,
             image: (
-                <a href="#">
-                    <img src="./src/image/carousel/collection_1.png" height="500" width="1024"/>
-                </a>
+                <img className="carousel__image" src="./src/image/carousel/1.jpg" height="500"/>
             )
         },
         {
+            id: 2,
             image: (
-                <a href="#">
-                    <img src="./src/image/carousel/collection_2.png" height="500" width="1024"/>
-                </a>
+                <img className="carousel__image" src="./src/image/carousel/2.jpg" height="500"/>
             )
         },
         {
+            id: 3,
             image: (
-                <a href="#">
-                    <img src="./src/image/carousel/collection_3.png" height="500" width="1024"/>
-                </a>
+                <img className="carousel__image" src="./src/image/carousel/3.jpg" height="500"/>
             )
         },
     ];
@@ -255,7 +252,14 @@ export default function HeaderSection() {
                     {clickUser && userSection}
                 </Grid>
                 <Grid container item xs={12} justify="center" alignItems="center">
-                    <Carousel className="carousel" interval={6000}>
+                    <Carousel
+                        className="carousel"
+                        enableAutoPlay
+                        transitionMs={1000}
+                        autoPlaySpeed={6000}
+                        showArrows={true}
+                        enableMouseSwipe={true}
+                    >
                         {
                             carouselItems.map((item, index) => <Items key={index} item={item} />)
                         }

@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 import './css/index.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'antd/dist/antd.css';
 
 const SW_URL = process.env.NODE_ENV === 'production' ? '/react/service-worker.js' : '/service-worker.js';
 

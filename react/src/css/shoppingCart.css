@@ -1,6 +1,9 @@
 .shopping-cart-modal {
     top: 20% !important;
 }
+.shopping-cart-modal__section {
+    outline: 0 !important;
+}
 .shopping-cart-modal__table {
     box-shadow: none !important;
 }
