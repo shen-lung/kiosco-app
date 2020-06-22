@@ -1,12 +1,11 @@
-import React, {PureComponent} from 'react';
-// import {Router} from 'react-router';
+import React from 'react';
 
-import Home from './components/Home';
+import HomePage from './components/HomePage';
 
 function App() {
     return (
         <div>
-            <Home />
+            <HomePage />
         </div>
     );
 }

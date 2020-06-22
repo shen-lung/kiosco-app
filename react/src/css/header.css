@@ -112,14 +112,14 @@
     font-size: 1.3em !important;
     position: relative !important;
     left: 83px !important;
-    z-index: 2000 !important;
+    z-index: 1000 !important;
     color: #dedede !important;
 }
 .rec-arrow-right {
     font-size: 1.3em !important;
     position: relative !important;
     right: 83px !important;
-    z-index: 2000 !important;
+    z-index: 1000 !important;
     color: #dedede !important;
 }
 .gEIJqc:hover {
