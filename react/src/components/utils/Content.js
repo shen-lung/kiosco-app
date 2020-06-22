@@ -5,7 +5,7 @@ import {
     Grid,
 } from '@material-ui/core';
 
-import '../css/content.css';
+import '../../css/content.css';
 
 class ContentSection extends PureComponent {
     render() {

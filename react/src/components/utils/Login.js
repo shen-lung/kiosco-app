@@ -12,7 +12,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 
-import '../css/login.css';
+import '../../css/login.css';
 
 function LoginTab(checked=false) {
     return (

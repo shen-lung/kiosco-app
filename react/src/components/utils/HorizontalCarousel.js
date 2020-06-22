@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import Carousel from 'react-elastic-carousel';
 import {
     Paper,
-    Grid,
 } from '@material-ui/core';
 
 

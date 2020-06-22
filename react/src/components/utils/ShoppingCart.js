@@ -21,7 +21,7 @@ import {
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import DeleteForeverRoundedIcon from '@material-ui/icons/DeleteForeverRounded';
 
-import '../css/shoppingCart.css';
+import '../../css/shoppingCart.css';
 
 function createData(producto, precio, cantidad, totalParcial, action) {
     return { producto, precio, cantidad, totalParcial, action };
